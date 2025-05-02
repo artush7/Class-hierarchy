@@ -5,6 +5,8 @@ TEST(class,fund)
 {
 
     Fund fund;
+    //fund.name = "AGBU";
+    fund.bank_account = 500;
     fund.field();
 
 

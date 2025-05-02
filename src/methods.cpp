@@ -1,5 +1,7 @@
-#include </home/artush/#main(linux)/c++ project/homework/Class Hierarchy/src/func.h>
+#include "/home/artush/#main(linux)/c++ project/homework/Class Hierarchy/src/func.h"
 #include <iostream>
+
+void Organization::field() {};
 
 void Fund::field()
 {

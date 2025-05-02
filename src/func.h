@@ -1,5 +1,4 @@
 
-int class_test();
 
 class Organization
 {   
