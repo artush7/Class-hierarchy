@@ -3,9 +3,9 @@
 
 TEST(class,fund)
 {
-
+    Organization org;
     Fund fund;
-    //fund.name = "AGBU";
+    org.setname("AGBU",5);
     fund.bank_account = 500;
     fund.field();
 

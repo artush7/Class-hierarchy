@@ -13,6 +13,8 @@ class Organization
     char address[50];
 
     virtual void field();
+    void setname(char* n,int len);
+        
 };
 
 class Fund : public Organization
