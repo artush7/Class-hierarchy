@@ -1,18 +1,8 @@
-#include "/home/artush/#main(linux)/c++ project/homework/Class Hierarchy/src/func.h"
+#include "/home/artush/main/c++_project/homework/Class Hierarchy/src/func.h"
 #include <iostream>
+#include <string.h>
 
 
-void Organization::setname(char* n,int len)
-{
-    for(int i = 0;i < len;++i)
-        {
-            name[i] = n[i];
-
-        }
-    std::cout <<name << std::endl;
-}
-
-void Organization::field() {};
 
 void Fund::field()
 {

@@ -1,9 +1,7 @@
-
-
 class Organization
 {   
- public:
-    char name[50];
+protected:
+    char _name[50];
     char charter[50];
     char legal_entity[50];
     int bank_account;
@@ -11,20 +9,29 @@ class Organization
     int TIN;
     int establishment;
     char address[50];
-
-    virtual void field();
-    void setname(char* n,int len);
+    
+public:
+    virtual ~Organization() {}
+    virtual void field() = 0;
+    virtual void set_name() = 0;
         
 };
 
+
 class Fund : public Organization
 {
-public:
+protected:
     char board_of_trustees[50];
     char president[50];
     char sponsor[50];
+public:
+    Fund(const char* name)
+    {
+
+    }
 
     void field() override;
+    void set_name() override;
 };
 
 class NGO : public Organization
@@ -55,3 +62,5 @@ public:
     void field() override;
 
 };
+
+
