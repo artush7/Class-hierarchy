@@ -1,7 +1,36 @@
-#include "/home/artush/main/c++_project/homework/Class Hierarchy/src/func.h"
+#include "org_types.h"
+
 #include <iostream>
 #include <string.h>
 
+Organization::Organization(const char* name,const char* legal_entity,int bank_account,int establishment,const char* address)
+{
+    strcpy(_name, name);
+    strcpy(_legal_entity, legal_entity);
+    this->_bank_account = bank_account;
+    this->_establishment = establishment;
+    strcpy(_address,address);
+}
+
+Fund::Fund(const char* name,const char* legal_entity,int bank_account,int establishment,const char* address, const char* president) : Organization(name, legal_entity, bank_account, establishment, address)
+{
+    strcpy(_president,president);
+}
+
+NGO::NGO(const char* name,const char* legal_entity,int bank_account,int establishment,const char* address, const char* director) : Organization(name, legal_entity, bank_account, establishment, address)
+{
+    strcpy(_director,director);
+}
+
+LLC::LLC(const char* name,const char* legal_entity,int bank_account,int establishment,const char* address, const char*,const char* director) : Organization(name, legal_entity, bank_account, establishment, address)
+{
+    strcpy(_director,director); 
+}
+
+CJSC::CJSC(const char* name,const char* legal_entity,int bank_account,int establishment,const char* address, const char*,const char* shareholder) : Organization(name, legal_entity, bank_account, establishment, address)
+{
+    strcpy(_shareholder,shareholder);
+}
 
 
 void Fund::field()
