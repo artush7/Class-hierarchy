@@ -8,14 +8,12 @@ class Registrar
 protected:
     std::vector<Organization*> _organization;
 public:
+
     void RegisterOrganization(Organization* organization)
     {
         _organization.push_back(organization);
     }
-    ~Registrar() 
-    {
-
-    }
+    ~Registrar() {}
 
 
 };

@@ -11,7 +11,7 @@ protected:
     char _address[50];
 public:
     Organization(const char* name,const char* legal_entity,int bank_account,int establishment,const char* address);
-
+    virtual ~Organization() {}
     virtual void field() = 0;
     //virtual void set_name() = 0;
         

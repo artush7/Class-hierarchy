@@ -8,7 +8,6 @@ protected:
     char _sponsor[50];
 public:
     Fund(const char* name,const char* legal_entity,int bank_account,int establishment,const char* address, const char* president);
-
     void field() override;
     //void set_name() override;
 };
@@ -32,6 +31,8 @@ protected:
     char _director[50];
 public:
     LLC(const char* name,const char* legal_entity,int bank_account,int establishment,const char* address, const char*,const char* direcotr);
+
+
     void field() override;
 };
 
@@ -43,6 +44,7 @@ protected:
 
 public:
     CJSC(const char* name,const char* legal_entity,int bank_account,int establishment,const char* address, const char*,const char* shareholder);
+
 
     void field() override;
 
